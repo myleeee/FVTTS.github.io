@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1> FVTTS </h1>
-    <p>This page is FVTTS demo site.</p>
+    <p>This is the demo webpage for the paper "FVTTS : Face based Voice synthesis Text-To-Speech".</p>
 
     <table border="0" cellpadding="0" cellspacing="0" style="width: 100">
 <tbody>
@@ -17,29 +17,312 @@
         <td align="CENTER" valign="CENTER">　<p><b>YourTTS</b></p>　</td>
         <td align="CENTER" valign="CENTER">　<p><b>Ground Truth</b></p>　</td>
     </tr>
-    <tr>
-        <td align="CENTER"><img src="image/0gks6ceq4eQ_00.jpg" alt="0gks6ceq4eQ_00" width="100" height="100">　</td>
-      
-        <td align="CENTER">　Not What Is It　</td>
-      
-        <td align="CENTER" valign="CENTER">　
-          <audio controls>
-              <source src='wav/FVTTS/0gks6ceq4eQ_00.wav'>
-            </audio>
-        </td>
-      
-        <td align="CENTER" valign="CENTER">　
-          <audio controls>
-              <source src='wav/yourTTS/0gks6ceq4eQ_00.wav'>
-            </audio>　
-        </td>
-      
-        <td align="CENTER" valign="CENTER">　
-          <audio controls>
-              <source src='wav/GT/0gks6ceq4eQ_00.wav'>
-            </audio>
-        </td>
-    </tr>
+100%|██████████| 10/10 [00:00<00:00, 5543.62it/s]
+0gks6ceq4eQ/00002.txt : NOT WHAT IS IT
+0gks6ceq4eQ/00005.txt : PREDICTIONS ARE THE BASIS OF EVERY EXPERIENCE THAT YOU HAVE
+0ZfSOArXbGQ/00001.txt : WE SAID YES
+0ZfSOArXbGQ/00002.txt : WE WERE SO EXCITED
+3uSQlcGCHUU/00001.txt : THIS ECONOMY WON'T WORK AND THOMAS JEFFERSON SAYING THE PEOPLE WON'T TRUST THAT
+3uSQlcGCHUU/00014.txt : AND NOTHING HAPPENED AT ALL
+3uSQlcGCHUU/00016.txt : THEY DON'T REPRESENT WHAT OUR VIEWS ARE
+dYNc3P4jSt4/00004.txt : SHE NEVER HAD TO DUCK AND COVER UNDER HER DESK AT SCHOOL
+vhVWzkbAW4I/00002.txt : IT SHOWED NO BLOCKAGES
+xkFTZcUPjBg/00001.txt : I WAS GOING THROUGH A HARD TIME AS WELL
+
+100%|██████████| 10/10 [00:12<00:00,  1.22s/it]
+cuda:2
+ITER 1000000 - LR : 0.0002
+<All keys matched successfully>
+ITER 1000000 - LR : 0.0002
+<All keys matched successfully>
+100%|██████████| 10/10 [00:10<00:00,  1.04s/it]
+100%|██████████| 10/10 [00:10<00:00,  1.06s/it]
+2023-11-06 13:16:49.173997: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-11-06 13:16:49.222228: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-06 13:16:50.381591: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+  0%|          | 0/10 [00:00<?, ?it/s]
+100%|██████████| 10/10 [00:24<00:00,  2.44s/it]
+
+REAL
+WER : 0.07042253762483597
+CER : 0.057692307978868484
+BLEU : 0.632482040602852
+
+FUSION
+WER : 0.3661971688270569
+CER : 0.20879121124744415
+BLEU : 0.21996443789597703
+MCD : 17.72826071396466
+
+FACE
+WER : 0.0845070406794548
+CER : 0.057692307978868484
+BLEU : 0.5541307548666919
+MCD : 16.57079959935904
+
+CONT
+WER : 0.3661971688270569
+CER : 0.17307692766189575
+BLEU : 0.282460452306179
+MCD : 17.249571879217044
+
+OnlyFacenet
+...
+WER : 0.30985915660858154
+CER : 0.1895604431629181
+BLEU : 0.29836139267636436
+MCD : 17.249571879217044
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 10/10 [00:04<00:00,  2.46it/s]
+
+your
+WER : 0.14084507524967194
+CER : 0.07417582720518112
+BLEU : 0.575571081960546
+MCD : 17.375893777506256
+
+100%|██████████| 10/10 [00:00<00:00, 139.16it/s]
+['0gks6ceq4eQ_00002',
+ '0gks6ceq4eQ_00005',
+ '0ZfSOArXbGQ_00001',
+ '0ZfSOArXbGQ_00002',
+ '3uSQlcGCHUU_00001',
+ '3uSQlcGCHUU_00014',
+ '3uSQlcGCHUU_00016',
+ 'dYNc3P4jSt4_00004',
+ 'vhVWzkbAW4I_00002',
+ 'xkFTZcUPjBg_00001']
+	<tr>
+		<td align="CENTER"><img src="image/0gks6ceq4eQ_00.jpg" alt="0gks6ceq4eQ_00" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/0gks6ceq4eQ_00.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/0gks6ceq4eQ_00.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/0gks6ceq4eQ_00002.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/0gks6ceq4eQ_03.jpg" alt="0gks6ceq4eQ_03" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/0gks6ceq4eQ_03.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/0gks6ceq4eQ_03.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/0gks6ceq4eQ_00005.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/0ZfSOArXbGQ_00.jpg" alt="0ZfSOArXbGQ_00" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/0ZfSOArXbGQ_00.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/0ZfSOArXbGQ_00.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/0ZfSOArXbGQ_00001.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/0ZfSOArXbGQ_01.jpg" alt="0ZfSOArXbGQ_01" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/0ZfSOArXbGQ_01.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/0ZfSOArXbGQ_01.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/0ZfSOArXbGQ_00002.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/3uSQlcGCHUU_01.jpg" alt="3uSQlcGCHUU_01" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/3uSQlcGCHUU_01.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/3uSQlcGCHUU_01.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/3uSQlcGCHUU_00001.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/3uSQlcGCHUU_05.jpg" alt="3uSQlcGCHUU_05" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/3uSQlcGCHUU_05.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/3uSQlcGCHUU_05.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/3uSQlcGCHUU_00014.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/3uSQlcGCHUU_07.jpg" alt="3uSQlcGCHUU_07" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/3uSQlcGCHUU_07.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/3uSQlcGCHUU_07.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/3uSQlcGCHUU_00016.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/dYNc3P4jSt4_02.jpg" alt="dYNc3P4jSt4_02" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/dYNc3P4jSt4_02.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/dYNc3P4jSt4_02.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/dYNc3P4jSt4_00004.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/vhVWzkbAW4I_01.jpg" alt="vhVWzkbAW4I_01" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/vhVWzkbAW4I_01.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/vhVWzkbAW4I_01.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/vhVWzkbAW4I_00002.wav">
+			</audio>
+		</td>
+	</tr>
+	<tr>
+		<td align="CENTER"><img src="image/xkFTZcUPjBg_01.jpg" alt="xkFTZcUPjBg_01" width="100" height="100">　</td>
+
+		<td align="CENTER">　Not What Is It　</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/FVTTS/xkFTZcUPjBg_01.wav">
+			</audio>
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/yourTTS/xkFTZcUPjBg_01.wav">
+			</audio>　
+		</td>
+
+		<td align="CENTER" valign="CENTER">　
+		<audio controls>
+			<source src="wav/GT/xkFTZcUPjBg_00001.wav">
+			</audio>
+		</td>
+	</tr>
     
 </tbody>
     </table>
