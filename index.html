@@ -14,6 +14,7 @@
 		  <p>This is the demo webpage for the paper "FVTTS : Face based Voice synthesis Text-To-Speech".</p>
 	  </section>
 	  <h2> FVTTS demo</h2>
+	  <h3>LRS Dataset</h3>
 	<style>
 	  table {
 	    width: 80%;
@@ -267,6 +268,339 @@
 	</tbody>
     </table>
 
+   <h3>NEW Dataset</h3>
+    <table border="0" cellpadding="0" cellspacing="0" >
+	<tbody>
+	    <tr>
+		<td align="CENTER" valign="CENTER" width="100">　<p><b>Speaker</b></p>　</td>
+		<td align="CENTER" valign="LEFT" width="300">　<p><b>TEXT</b></p>　</td>
+		<td align="CENTER" valign="CENTER" width="150">　<p><b>FVTTS</b></p>　</td>
+		<td align="CENTER" valign="CENTER" width="150">　<p><b>YourTTS</b></p>　</td>
+		<td align="CENTER" valign="CENTER" width="150">　<p><b>Ground Truth</b></p>　</td>
+		
+		
+video	wav	text	Speaker	clean_text
+0	0	0	Hi	V	hˈaɪ
+1	0	1	I'm Vanessa from SpeakEnglishWithVanessa.com. ...	V	aɪm vɐnˈɛsə fɹʌm spˈiːkɪŋɡlˌɪʃwɪðvˌeɪnɛsə.kˈɑː...
+2	0	2	Do you have trouble finding someone to speak i...	V	dˈuː juː hæv tɹˈʌbəl fˈaɪndɪŋ sˈʌmwʌn tə spˈiː...
+3	0	3	practice but ugh, you just can't find someone ...	V	pɹˈæktɪs bˌʌt ˈʌɡ, juː dʒˈʌst kˈænt fˈaɪnd sˈʌ...
+4	0	4	I have a great solution for you. My husband, D...	V	ˈaɪ hæv ɐ ɡɹˈeɪt səlˈuːʃən fɔːɹ juː. maɪ hˈʌsb...
+7 :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+12 :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+L :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+D :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+L :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+A :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+0 :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+3 :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+1 :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+4 :  WELL VERY OFTEN WE THINK ABOUT POLITICAL CHANGE IN DEFINED COMPARTMENTS THESE DAYS
+
+cuda:2
+ITER 1074 - LR : 0.0002
+video	wav	text	Speaker	clean_text
+0	100	547	But when it comes to like for example lets say...	7	bˌʌt wɛn ɪt kˈʌmz tə lˈaɪk fɔːɹ ɛɡzˈæmpəl lˈɛt...
+1	100	631	like Hongdae especially during the nighttime	12	lˈaɪk hˈɑːŋdiː ɪspˈɛʃəli dˈʊɹɹɪŋ ðə nˈaɪttaɪm
+2	62	82	interesting one that you don't even have to be...	L	ˈɪntɹɛstɪŋ wˈʌn ðæt juː dˈoʊnt ˈiːvən hæv təbi...
+3	97	841	money, Otherwise, it's going to be	D	mˈʌni, ˈʌðɚwˌaɪz, ɪts ɡˌoʊɪŋ tə bˈiː
+4	54	113	um although I have certainly heard of them so ...	L	ˈʌm ɔːlðˈoʊ ˈaɪ hæv sˈɜːʔn̩li hˈɜːd ʌv ðˌɛm sˌ...
+5	88	51	smile meanings into emojis is really kind of i...	A	smˈaɪl mˈiːnɪŋz ˌɪntʊ ɪmˈoʊdʒiz ɪz ɹˈiəli kˈaɪ...
+6	100	9	Dont worry I wasnt offended by this.	0	dˈoʊnt wˈʌɹi ˈaɪ wˈɑːsnt əfˈɛndᵻd baɪ ðˈɪs.
+7	100	196	To be honest back home if you lose weight peop...	3	təbi ˈɑːnɪst bˈæk hˈoʊm ɪf juː lˈuːz wˈeɪt pˈi...
+8	100	128	And its really hard to be that honest.	1	ænd ɪts ɹˈiəli hˈɑːɹd təbi ðæt ˈɑːnɪst.
+9	100	76	Yes Ive had pretty honest conversations with m...	4	jˈɛs ˈaɪv hæd pɹˈɪɾi ˈɑːnɪst kɑːnvɚsˈeɪʃənz wɪ...
+100%|██████████| 10/10 [00:10<00:00,  1.08s/it]
+
+REAL
+WER : 1.0094339847564697
+CER : 0.8490231037139893
+BLEU : 4.0176911638772655e-232
+
+FACE
+WER : 1.0094339847564697
+CER : 0.8667851090431213
+BLEU : 4.9795818538665085e-232
+MCD : 23.59841393583343
+
+YOUR
+WER : 1.0
+CER : 0.9751332402229309
+BLEU : 4.95669689523594e-157
+MCD : 19.50189775912326
+
+100%|██████████| 10/10 [00:05<00:00,  1.89it/s]
+
+FACE
+WER : 0.5384615659713745
+CER : 0.25731706619262695
+BLEU : 0.2513370144643108
+MCD : 18.88450332805852
+
+No API token found for 🐸Coqui Studio voices - https://coqui.ai 
+Visit 🔗https://app.coqui.ai/account to get one.
+Set it as an environment variable `export COQUI_STUDIO_TOKEN=<token>`
+
+ > tts_models/multilingual/multi-dataset/your_tts is already downloaded.
+ > Using model: vits
+ > Setting up Audio Processor...
+ | > sample_rate:16000
+ | > resample:False
+ | > num_mels:80
+ | > log_func:np.log10
+ | > min_level_db:0
+ | > frame_shift_ms:None
+ | > frame_length_ms:None
+ | > ref_level_db:None
+ | > fft_size:1024
+ | > power:None
+ | > preemphasis:0.0
+ | > griffin_lim_iters:None
+ | > signal_norm:None
+ | > symmetric_norm:None
+ | > mel_fmin:0
+ | > mel_fmax:None
+ | > pitch_fmin:None
+ | > pitch_fmax:None
+...
+['Yes Ive had pretty honest conversations with my friends']
+ > Processing time: 1.2050268650054932
+ > Real-time factor: 0.3672742654695194
+ > Saving output to RESULT_NEW/your/video_100_76.wav
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+'But when it comes to like for example lets say I just finished a workout  '
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_100_547.jpg" alt="video_100_547" width="100" height="100">　</td>
+
+			<td align="CENTER">　"But when it comes to like for example lets say I just finished a workout  "　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_100_547.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_100_547.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_100_547.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_100_631.jpg" alt="video_100_631" width="100" height="100">　</td>
+
+			<td align="CENTER">　"like Hongdae especially during the nighttime "　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_100_631.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_100_631.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_100_631.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_62_82.jpg" alt="video_62_82" width="100" height="100">　</td>
+
+			<td align="CENTER">　"interesting one that you don't even have to be like on your bicycle"　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_62_82.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_62_82.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_62_82.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_97_841.jpg" alt="video_97_841" width="100" height="100">　</td>
+
+			<td align="CENTER">　"money, Otherwise, it's going to be"　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_97_841.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_97_841.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_97_841.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_54_113.jpg" alt="video_54_113" width="100" height="100">　</td>
+
+			<td align="CENTER">　"um although I have certainly heard of them so we get these caffeine from"　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_54_113.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_54_113.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_54_113.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_88_51.jpg" alt="video_88_51" width="100" height="100">　</td>
+
+			<td align="CENTER">　"smile meanings into emojis is really kind of it's it was a helpful way for me"　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_88_51.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_88_51.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_88_51.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_100_9.jpg" alt="video_100_9" width="100" height="100">　</td>
+
+			<td align="CENTER">　"Dont worry I wasnt offended by this.  "　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_100_9.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_100_9.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_100_9.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_100_196.jpg" alt="video_100_196" width="100" height="100">　</td>
+
+			<td align="CENTER">　"To be honest back home if you lose weight people will talk.  "　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_100_196.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_100_196.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_100_196.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_100_128.jpg" alt="video_100_128" width="100" height="100">　</td>
+
+			<td align="CENTER">　"And its really hard to be that honest.  "　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_100_128.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_100_128.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_100_128.wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER"><img src="image/sampleimg/video_100_76.jpg" alt="video_100_76" width="100" height="100">　</td>
+
+			<td align="CENTER">　"Yes Ive had pretty honest conversations with my friends"　</td
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/source/video_100_76.wav">
+			</audio>
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/your/video_100_76.wav">
+				</audio>　
+			</td>
+
+			<td align="CENTER" valign="CENTER">　
+			<audio controls>
+				<source src="wav/NEW/video_100_76.wav">
+				</audio>
+			</td>
+		</tr>
+	    
+	</tbody>
+    </table>
    
   </body>
   
